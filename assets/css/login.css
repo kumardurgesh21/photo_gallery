@@ -1,0 +1,100 @@
+/* General Reset */
+body, h1, label, input, button, p, a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Main Container */
+main {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Header */
+h1 {
+  color: #b7f6d7;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+/* Form Labels */
+form label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #333;
+  text-align: left;
+}
+
+/* Form Inputs */
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form input:focus {
+  border-color: #2575fc;
+  outline: none;
+}
+
+/* Submit Button */
+button {
+  background-color: #6a11cb;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2575fc;
+}
+
+/* Error Message */
+.error {
+  color: #ff4d4d;
+  background: #ffecec;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+/* Already Registered Message */
+main p {
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+main p a {
+  color: #2575fc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main p a:hover {
+  color: #6a11cb;
+}

@@ -1,0 +1,170 @@
+/* Reset some basic styles */
+body, h1, h2, table {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #bb0202;
+  color: #fff;
+  padding: 1em 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1em;
+  font-size: 1.1em;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 2em;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 1.6em;
+  color: #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2em;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 1em;
+  text-align: left;
+  font-size: 1em;
+}
+
+th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+td {
+  background-color: #fafafa;
+}
+
+tr:nth-child(even) td {
+  background-color: #f9f9f9;
+}
+
+tr:hover td {
+  background-color: #f0f0f0;
+}
+
+/* Button Styling */
+a.button {
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  background-color: #bb0202;
+  font-size: 1em;
+  display: inline-block;
+  margin: 0.5em 0;
+  transition: background-color 0.3s ease;
+}
+
+a.button:hover {
+  background-color: #8b0101;
+}
+
+/* Styling for the Back to Admin Panel Button */
+a.button.back {
+  display: inline-block;
+  padding: 0.8em 1.5em;
+  border-radius: 8px;
+  background: linear-gradient(to right, #2980b9, #3498db);
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+a.button.back:hover {
+  background: linear-gradient(to right, #3498db, #2980b9);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Styling for the Logout Button */
+a.button.logout {
+  display: inline-block;
+  padding: 0.8em 1.5em;
+  border-radius: 8px;
+  background: linear-gradient(to right, #e74c3c, #c0392b);
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+a.button.logout:hover {
+  background: linear-gradient(to right, #c0392b, #e74c3c);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Make the table more compact */
+table td, table th {
+  padding: 10px;
+  font-size: 1.1em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  body {
+      font-size: 14px;
+  }
+
+  table td, table th {
+      padding: 8px;
+  }
+
+  h2 {
+      font-size: 1.4em;
+  }
+}
+.back{
+  background-color: #231f1f;
+  border-radius: 9px; /* Rounded corners */
+  padding: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}

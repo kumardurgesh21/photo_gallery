@@ -1,0 +1,119 @@
+/* Reset some basic styles */
+body, h1, h2, table {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f9;
+  color: #a91212;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #bb0202;
+  color: #fff;
+  padding: 1em 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1em;
+}
+
+main {
+  padding: 2em;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2em;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 1em;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+tbody tr:hover {
+  background-color: #f0e1e1;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Button Styling */
+button, a.button {
+  display: inline-block;
+  padding: 0.5em 1.2em;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* View Details Button */
+a.button.details {
+  background-color: #3498db;
+}
+
+a.button.details:hover {
+  background-color: #2980b9;
+  box-shadow: 0 4px 8px rgba(52, 152, 219, 0.6);
+}
+
+/* Delete Button */
+a.button.delete {
+  background-color: #e74c3c;
+}
+
+a.button.delete:hover {
+  background-color: #c0392b;
+  box-shadow: 0 4px 8px rgba(231, 76, 60, 0.6);
+}
+
+/* Centered and Spaced Actions */
+td > a.button {
+  margin-right: 0.5em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  table, th, td {
+    font-size: 0.9em;
+  }
+
+  a.button {
+    padding: 0.4em 1em;
+  }
+}
